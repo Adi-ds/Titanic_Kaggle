@@ -20,3 +20,7 @@ Embarked    | Port of Embarkation |C = Cherbourg; Q = Queenstown; S = Southampto
 ## Parts of this project
 - Part 1 : Data Cleaning and Feature Engineering
 - Part 2 : EDA and Visualization
+
+## Idea of Progress
+Data Cleaning and Feature Engineering will be done at first. The cleaned datasets will be stored as new csv files.
+The new csv files will be then used in EDA and Visualization.
