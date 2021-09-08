@@ -110,4 +110,5 @@ The Gini Index is defined by the formula :
 
 <img src="https://render.githubusercontent.com/render/math?math=\LARGE Gini Index = \sum_{i = 1}^k{p_i}{(1-p_i)} = 1-\sum_{i = 1}^k{p_i}^2">
 
-Note : Information Gain uses Entropy as the base calculation ad so it has a wider range of results whereas the Gini Index caps at one. The Gini Index facilitates the bigger distributions so easy to implement whereas the Information Gain favors lesser distributions having small count with multiple specific values. Gini index operates on the categorical target variables in terms of “success” or “failure” and performs only binary split, in opposite to that Information Gain computes the difference between entropy before and after the split and indicates the impurity in classes of elements.
+
+NB : Information Gain uses Entropy as the base calculation ad so it has a wider range of results whereas the Gini Index caps at one. The Gini Index facilitates the bigger distributions so easy to implement whereas the Information Gain favors lesser distributions having small count with multiple specific values. Gini index operates on the categorical target variables in terms of “success” or “failure” and performs only binary split, in opposite to that Information Gain computes the difference between entropy before and after the split and indicates the impurity in classes of elements.
