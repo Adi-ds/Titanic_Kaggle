@@ -1,4 +1,4 @@
-# Sources
+# Resources
 
 1 [Decision Tree SG](https://www.kaggle.com/saptarsi/decision-tree-sg)
 
