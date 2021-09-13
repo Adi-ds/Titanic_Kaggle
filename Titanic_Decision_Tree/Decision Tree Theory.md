@@ -14,7 +14,7 @@ Now, decision tree algorithm works with mainly two impurity metrices :
 
 In layman terms, **Entropy** is nothing but the measure of homogeneity. The goal of Decision tree in general is to increase homogeneity. This metric allows the decision tree classifier in a way, such that, it ultimately attains maximum homogeniety possible in the leaf nodes.
 
-Suppose, <img src="https://render.githubusercontent.com/render/math?math=\LARGE \mathcal{C}"> be the set of k classes, which are possible from a feature F of a dataset, i.e, <img src="https://render.githubusercontent.com/render/math?math=\LARGE \mathcal{C} = \{F_1, F_2, F_3, ..... , H_k\}">.
+Suppose, <img src="https://render.githubusercontent.com/render/math?math=\LARGE \red \mathcal{C}"> be the set of k classes, which are possible from a feature F of a dataset, i.e, <img src="https://render.githubusercontent.com/render/math?math=\LARGE \mathcal{C} = \{F_1, F_2, F_3, ..... , H_k\}">.
 
 Now, let us define, <img src="https://render.githubusercontent.com/render/math?math=\LARGE p_i"> as the probability of occurence of <img src="https://render.githubusercontent.com/render/math?math=\LARGE F_i">, i.e,
 
