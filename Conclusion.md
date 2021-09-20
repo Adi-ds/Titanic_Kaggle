@@ -1,3 +1,5 @@
+# Conclusion from EDA
+
 After the EDA and the visualizations, we can conclude the following (considering the training set mainly) :
 1. If we consider both the training set and testing set provided by Kaggle, then it can be seen that there were **63 families aboard** and considering the members of the families, *236 passengers were travelling with families*. But, if we consider the training set only, **142 passengers (approximately 21%) were found to travel with their families**, out of which *80 passengers survived (77.5%)* and **537 passengers (approximately 79%) were travelling alone** out of which, *163 passengers survived (approximately, 43.58%)*. So, **Survival Ratio is greater for the passenger population who were travelling with family**. In other words, most of the passengers, who were travelling alone, did not survive that night.
 2. Out of the total passenger population, **577 (64.76%) were male passengers** and **314 (35.24%) were female passegers**.
