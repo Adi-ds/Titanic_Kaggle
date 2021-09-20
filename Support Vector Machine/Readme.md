@@ -1,0 +1,3 @@
+# Abstract
+
+Support Vector Machine is a widely used Supervised Machine Learning Model, which is used for both classification and regression purposes. But, as SVM will be applied to the Titanic dataset for classification, this part deals with the mathematics and application of SVM. SVM uses an optimal hyperplane to classify between two groups, which is obtained by maximizing the margin between the hyperplanes passing through the support vectors of each of the two groups. Moreover, SVM uses Kernels, which can reshape the hyperplanes accoording to the need. That is why, SVM has gained so much popularity over the years.
