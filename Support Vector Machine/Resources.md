@@ -1,0 +1,12 @@
+# Resources
+1. [The Mathematics Behind Support Vector Machine Algorithm (SVM)](https://www.analyticsvidhya.com/blog/2020/10/the-mathematics-behind-svm/)
+2. [Understanding Support Vector Machine(SVM) algorithm from examples (along with code)](https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/)
+3. [Understanding the Mathematics behind Support Vector Machines](https://heartbeat.fritz.ai/understanding-the-mathematics-behind-support-vector-machines-5e20243d64d5)
+4. [Math behind SVM (Support Vector Machine)](https://ankitnitjsr13.medium.com/math-behind-support-vector-machine-svm-5e7376d0ee4d)
+5. [Math behind SVM(Support Vector Machine)](https://ankitnitjsr13.medium.com/math-behind-svm-support-vector-machine-864e58977fdb)
+6. [A Mathematical Explanation of Support Vector Machines](https://towardsdatascience.com/a-mathematical-explanation-of-support-vector-machines-e433ffe04362)
+7. [An Idiot’s guide to Support vector machines (SVMs)](http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf)
+8. [Support Vector Machines(SVM) — An Overview](https://towardsdatascience.com/https-medium-com-pupalerushikesh-svm-f4b42800e989)
+9. [Introduction to Support Vector Machine(SVM)](https://ai.plainenglish.io/introduction-to-support-vector-machine-svm-cd0759098471)
+10. [Support Vector Machines - Caltech](https://www.youtube.com/watch?v=eHsErlPJWUU)
+11. [Sklearn-Support Vector Machines](https://scikit-learn.org/stable/modules/svm.html#svm-classification)
