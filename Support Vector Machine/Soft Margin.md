@@ -85,14 +85,14 @@ So from eq(1) we get -
 
 And the KKT conditions are :
 
-- <img src="https://render.githubusercontent.com/render/math?math=\Large \vec{w} = \sum_{i=1}^n\lambda_iy_ix_i">
-- <img src="https://render.githubusercontent.com/render/math?math=\Large \sum_{i=1}^n\lambda_iy_i = 0">
-- <img src="https://render.githubusercontent.com/render/math?math=\Large C = \mu_i %2B \lambda_i">
-- <img src="https://render.githubusercontent.com/render/math?math=\Large \lambda_i(y_i(\vec{w}^T\vec{x_i} %2B b)-1 %2B \xi_i) = 0">
-- <img src="https://render.githubusercontent.com/render/math?math=\Large y_i(\vec{w}^T\vec{x_i} %2B b)-1 %2B \xi_i \geq 0">
-- <img src="https://render.githubusercontent.com/render/math?math=\Large \mu_i \xi_i = 0">
-- <img src="https://render.githubusercontent.com/render/math?math=\Large \mu_i \geq 0">
-- <img src="https://render.githubusercontent.com/render/math?math=\Large \xi_i \geq 0">
+- <img src="https://render.githubusercontent.com/render/math?math=\Large \vec{w} = \sum_{i=1}^n\lambda_iy_ix_i">...................................eq(5)
+- <img src="https://render.githubusercontent.com/render/math?math=\Large \sum_{i=1}^n\lambda_iy_i = 0">.........................................eq(6)
+- <img src="https://render.githubusercontent.com/render/math?math=\Large C = \mu_i %2B \lambda_i">................................................eq(7)
+- <img src="https://render.githubusercontent.com/render/math?math=\Large \lambda_i(y_i(\vec{w}^T\vec{x_i} %2B b)-1 %2B \xi_i) = 0">...........eq(8)
+- <img src="https://render.githubusercontent.com/render/math?math=\Large y_i(\vec{w}^T\vec{x_i} %2B b)-1 %2B \xi_i \geq 0">...................eq(9)
+- <img src="https://render.githubusercontent.com/render/math?math=\Large \mu_i \xi_i = 0">......................................................eq(10)
+- <img src="https://render.githubusercontent.com/render/math?math=\Large \mu_i \geq 0">...........................................................eq(11)
+- <img src="https://render.githubusercontent.com/render/math?math=\Large \xi_i \geq 0">...........................................................eq(12)
 
 Hence we get the following dual problem :
 
@@ -133,3 +133,14 @@ Hence, the hyperplane equation becomes,
 </p>
 
 Moreover, the <img src="https://render.githubusercontent.com/render/math?math=\Large {\lambda_i}^*"> ’s will all be zero except for the support vectors. Thus, many of the terms in the sum above will be zero, only the products between x and the support vectors (of which there is often only a small number) in order to make prediction.
+
+Now, considering the KKT conditions
+- If <img src="https://render.githubusercontent.com/render/math?math=\Large y_i\left(\vec{w}^T\vec{x} %2B b\right)-1 %2B \ \xi_i > 0">, then <img src="https://render.githubusercontent.com/render/math?math=\Large \lambda_i = 0"> and <img src="https://render.githubusercontent.com/render/math?math=\Large \lambda_i = C - \mu_i = 0 \implies \mu_i = C \neq 0">, then <img src="https://render.githubusercontent.com/render/math?math=\Large \xi_i = 0"> and <img src="https://render.githubusercontent.com/render/math?math=\Large y_i(\vec{w}^T\vec{x} %2B) > 1">.
+- Otherwise, <img src="https://render.githubusercontent.com/render/math?math=\Large y_i\left(\vec{w}^T\vec{x} %2B b\right)-1 %2B \ \xi_i > 0">, then <img src="https://render.githubusercontent.com/render/math?math=\Large \xi_i = 1 - y_i\left(\vec{w}^T\vec{x} %2B b\right)">
+
+Consequently, if <img src="https://render.githubusercontent.com/render/math?math=\Large \xi_i^*"> be the optimized value of <img src="https://render.githubusercontent.com/render/math?math=\Large \xi_i">, then we will get - 
+
+<p align = "center">
+  <img src="https://render.githubusercontent.com/render/math?math=\Large  \xi_i^{*} =  \begin{pmatrix} 0 & if\ (1 - y_i(\vec{w^*}^T\vec{x_i} = b^*)) < 0 \\ (1 - y_i(\vec{w^*}^T\vec{x_i} = b^*)) &  if\ (1 - y_i(\vec{w^*}^T\vec{x} + b^*)) \geq 0 \end{pmatrix}">
+</p>
+
