@@ -7,7 +7,7 @@ The derivation of the SVM as presented in [Hard Margin](https://github.com/Adi-d
 In fact, even if the data is linearly separable, it might still not be beneficial to use the hard-margin SVM because outliers can have a large impact on the location of the hyperplane. If it is strictly imposed that hyperplane stays as far as from the closest data points,then the data points will be linearly separable but there will be also narrow margin, in that case model will be extremely sensitive to noisy data points , and model will lack generalization capability i.e. chance of under-fitting will increases. Also, it will only work with linearly separable data-points.
 
 <p align = "center">
-  <img src = "https://www.aimsciences.org/fileAIMS/journal/article/mfc/2020/4/PIC/A0000-0001_2020_4_279-2.jpg">
+  <img src = "https://github.com/Adi-ds/Private-Repo/blob/main/images/svm.png">
 </p>
 
 To avoid these issues it is preferable to use more flexible model with some margin violation. It is better to have large margin, even though some constraints is violated. Margin violation means choosing an hyperplane, which can allow some data points to stay in either in between the margin area or in the incorrect side of hyperplane, which is contrast to hard margin classification task. In other words, instead of trying to maximize the distance between the hyperplane and the closest data points while keeping all points correctly classified, we try to maximize the margin but allow data points to be wrongly classified but discouraging this by adding penalization to the objective function.This type of classification are called as soft margin classification.
@@ -25,7 +25,7 @@ To relax the constrains of the equation slightly to allow the margin violation t
   <img src="https://render.githubusercontent.com/render/math?math=\Large \vec{w}^T\vec{x_i} %2B b \leq -1 %2B \xi_i"> for <img src="https://render.githubusercontent.com/render/math?math=\Large y_i = - 1">
 </p>
 
-Combining the above two equations, it can be written as <img src="https://render.githubusercontent.com/render/math?math=\Large y_i\left(\vec{w}^T\vec{x_i}\right) - 1 %2B \xi_i \geq 0, \forall i = 1,2,.....,n">.
+Combining the above two equations, it can be written as <img src="https://render.githubusercontent.com/render/math?math=\Large y_i\left(\vec{w}^T\vec{x_i} %2B b\right) - 1 %2B \xi_i \geq 0, \forall i = 1,2,.....,n">.
 
 Here,
 - <img src="https://render.githubusercontent.com/render/math?math=\Large \xi_i = 0"> in case of no error, i.e., for the points are in their ideal locations.
