@@ -77,7 +77,7 @@ Now, let us look at the terms individually.
 
 <img src="https://equatio-api.texthelp.com/png/%5Cbegin%7Barray%7D%7Bl%7D%5Cfrac%7B1%7D%7B2%7D%5Csum_%7B1%3D1%7D%5En%5Clambda_i%5Clambda_jy_iy_jx_i%5ETx_j%5C%5C%0D%0A%3D%5Cfrac%7B1%7D%7B2%7D%5Cleft(%5Clambda_%7B1%5C%20%7D%5Clambda_2%5C%20...%5C%20%5Clambda_n%5Cright)%5Cbegin%7Bpmatrix%7Dy_1y_1x_1%5ETx_1%26y_1y_2x_1%5ETx_2%26..........%26y_1y_nx_1%5ETx_n%26%5C%5C%0D%0Ay_2y_1x_2%5ETx_1%26y_2y_2x_2%5ETx_2%26..........%26y_2y_nx_2%5ETx_n%26%5C%5C%0D%0A..............%26..............%26..........%26..............%26%5C%5C%0D%0A..............%26..............%26..........%26..............%26%5C%5C%0D%0A..............%26..............%26..........%26..............%26%5C%5C%0D%0Ay_ny_1x_n%5ETx_1%26y_ny_2x_n%5ETx_2%26..........%26y_ny_nx_n%5ETx_n%26%5Cend%7Bpmatrix%7D%5Cbegin%7Bpmatrix%7D%5Clambda_1%5C%5C%0D%0A%5Clambda_2%5C%5C%0D%0A.%5C%5C%0D%0A.%5C%5C%0D%0A.%5C%5C%0D%0A%5Clambda_n%5C%5C%0D%0A%5Cend%7Bpmatrix%7D%5C%5C%0D%0A%3D%5Cfrac%7B1%7D%7B2%7D%5Cvec%7B%5Clambda%7D%5ETQ%5Cvec%7B%5Clambda%7D%5Cend%7Barray%7D?height=286">
 
-<img src="https://equatio-api.texthelp.com/png/%5Csum_%7Bi%3D1%7D%5En%5Clambda_iy_i%5C%20%3D%5C%20%5Cleft(%5Clambda_1%5C%20%5Clambda_2%5C%20...%2C%5C%20%5Clambda_n%5Cright)%5Cleft%5B%5Cbegin%7Bmatrix%7Dy_1%5C%5C%0D%0Ay_2%5C%5C%0D%0A.%5C%5C%0D%0A.%5C%5C%0D%0A.%5C%5C%0D%0Ay_n%5Cend%7Bmatrix%7D%5Cright%5D%3D%5Cvec%7B%5Clambda%7D%5Cvec%7By%7D?height=194">
+<img src="https://render.githubusercontent.com/render/math?math=\Large \sum_{i=1}^n\lambda_iy_i=\lambda_1+\lambda_2+....+\lambda_n=\ \left(\lambda_1\ \lambda_{2\ }....\ \lambda_n\right)\left[\begin{matrix}y_1\\y_2\\.\\.\\.\\y_n\end{matrix}\right] = \vec{\lambda}^T\vec{y}">
 
 Now, we can write the dual problem as 
 
@@ -91,4 +91,5 @@ Therefore, the obtained value of <img src="https://render.githubusercontent.com/
 
 Clearly, the optimal <img src="https://render.githubusercontent.com/render/math?math=\Large \vec{w^{*}}"> is a function of <img src="https://render.githubusercontent.com/render/math?math=\Large \vec{\lambda}^{*}">.
 
-Therefore, the optimal solution of <img src="https://render.githubusercontent.com/render/math?math=\Large b"> is given by <img src = "https://render.githubusercontent.com/render/math?math=\Large b^*\ =\ -\ \frac {\max_{i:y_i=-1}\vec{w}^*\vec{x_i}\ %2B \min_{i:y_i=1}\vec{w}^*\vec{x_i} }{2}">.
+Therefore, the optimal solution of <img src="https://render.githubusercontent.com/render/math?math=\Large b"> is given by <img src = "https://render.githubusercontent.com/render/math?math=\Large b^*\ =\ -\ \frac {\max_{i:y_i=-1}\vec{w^*}^T\vec{x_i}\ %2B \min_{i:y_i=1}\vec{w^*}^T\vec{x_i} }{2}">.
+
