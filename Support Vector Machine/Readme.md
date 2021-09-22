@@ -7,4 +7,5 @@ Support Vector Machine is a widely used Supervised Machine Learning Model, which
 1. [SVM - Theory](https://github.com/Adi-ds/Titanic_Kaggle/blob/main/Support%20Vector%20Machine/SVM%20-%20Theory.md)
 2. [Notion of Margin and Normalization](https://github.com/Adi-ds/Titanic_Kaggle/blob/main/Support%20Vector%20Machine/Notion%20of%20Margin%20and%20Normalization.md)
 3. [Hard Margin](https://github.com/Adi-ds/Titanic_Kaggle/blob/main/Support%20Vector%20Machine/Optimization%20-%20Completely%20Separable%20Case%20.md)
-4. [Resources](https://github.com/Adi-ds/Titanic_Kaggle/blob/main/Support%20Vector%20Machine/Resources.md)
+4. [Soft Margin](https://github.com/Adi-ds/Titanic_Kaggle/blob/main/Support%20Vector%20Machine/Soft%20Margin.md)
+5. [Resources](https://github.com/Adi-ds/Titanic_Kaggle/blob/main/Support%20Vector%20Machine/Resources.md)
