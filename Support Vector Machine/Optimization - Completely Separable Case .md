@@ -93,3 +93,10 @@ Clearly, the optimal <img src="https://render.githubusercontent.com/render/math?
 
 Therefore, the optimal solution of <img src="https://render.githubusercontent.com/render/math?math=\Large b"> is given by <img src = "https://render.githubusercontent.com/render/math?math=\Large b^*\ =\ -\ \frac {\max_{i:y_i=-1}\vec{w^*}^T\vec{x_i}\ %2B \min_{i:y_i=1}\vec{w^*}^T\vec{x_i} }{2}">.
 
+Hence, the hyperplane equation becomes, 
+
+<p align = "center">
+  <img src="https://render.githubusercontent.com/render/math?math=\Large {w^*}^Tx %2B b^* = ( {\sum_{i = 1}^n}{\lambda_i^*}y_ix_i )^Tx %2B b^* = {\sum_{i = 1}^n}{\lambda_i^*}y_i(x_i^Tx) %2B b^*">
+</p>
+
+Moreover, the <img src="https://render.githubusercontent.com/render/math?math=\Large {\lambda_i}^*"> ’s will all be zero except for the support vectors. Thus, many of the terms in the sum above will be zero, only the products between x and the support vectors (of which there is often only a small number) in order to make prediction.
