@@ -44,9 +44,7 @@ Now, in case of soft-margin classifier, <img src="https://render.githubuserconte
 
 Hence, to maximize the margins and minimize the mistakes, the primary optimization problem is written as :
 
-<p align = "center">
-  Minimize <img src="https://render.githubusercontent.com/render/math?math=\Large { \frac {||\vec{w}||^2}{2} } %2B C{\sum_{i=1}^n \xi_i}"> subject to <img src="https://render.githubusercontent.com/render/math?math=\Large y_i\left(\vec{w}^T\vec{x_i} %2B b\right) - 1 %2B \xi_i \geq 0">, <img src="https://render.githubusercontent.com/render/math?math=\Large \xi_i \geq 0 , \forall i = 1,2,.....,n">.
-</p>
+Minimize <img src="https://render.githubusercontent.com/render/math?math=\Large { \frac {||\vec{w}||^2}{2} } %2B C{\sum_{i=1}^n \xi_i}"> subject to <img src="https://render.githubusercontent.com/render/math?math=\Large y_i\left(\vec{w}^T\vec{x_i} %2B b\right) - 1 %2B \xi_i \geq 0">, <img src="https://render.githubusercontent.com/render/math?math=\Large \xi_i \geq 0 , \forall i = 1,2,.....,n">.
 
 Here, <img src="https://render.githubusercontent.com/render/math?math=\Large C \geq 0"> is the penalty term. From this,  it can be identified that if <img src="https://render.githubusercontent.com/render/math?math=\Large C = 0">, the hard-margin problem is recovered.
 
@@ -141,6 +139,15 @@ Now, considering the KKT conditions
 Consequently, if <img src="https://render.githubusercontent.com/render/math?math=\Large \xi_i^*"> be the optimized value of <img src="https://render.githubusercontent.com/render/math?math=\Large \xi_i">, then we will get - 
 
 <p align = "center">
-  <img src="https://render.githubusercontent.com/render/math?math=\Large  \xi_i^{*} =  \begin{pmatrix} 0 & if\ (1 - y_i(\vec{w^*}^T\vec{x_i} = b^*)) < 0 \\ (1 - y_i(\vec{w^*}^T\vec{x_i} = b^*)) &  if\ (1 - y_i(\vec{w^*}^T\vec{x} + b^*)) \geq 0 \end{pmatrix}">
+  <img src="https://render.githubusercontent.com/render/math?math=\Large %5Cxi_i%5E%7B*%7D%20%3D%20%5Cbegin%7Bcases%7D%200%20%26%20if%20(1%20-%20y_i(%5Cvec%7Bw%5E*%7D%5ET%5Cvec%7Bx_i%7D%20%2B%20b%5E*))%20%3C%200%20%5C%5C%20(1%20-%20y_i(%5Cvec%7Bw%5E*%7D%5ET%5Cvec%7Bx_i%7D%20%2B%20b%5E*))%20%26%20if%20(1%20-%20y_i(%5Cvec%7Bw%5E*%7D%5ET%5Cvec%7Bx%7D%20%2B%20b%5E*))%20%5Cgeq%200%20%5Cend%7Bcases%7D">
 </p>
 
+That means, <img src="https://render.githubusercontent.com/render/math?math=\Large \xi_i^{\ast} = max\{0,1-y_i(\vec{w^*}^T\vec{x_i^*} + b^*)\}"> and hence the optimization problem as an unconstrained optimization problem whose target variable is <img src="https://render.githubusercontent.com/render/math?math=\Large (w,b)">:
+
+Minimize <img src="https://render.githubusercontent.com/render/math?math=\Large { \frac {||\vec{w}||^2}{2} } %2B C{\sum_{i=1}^n max\{0,1-y_i(\vec{w}^T\vec{x_i} + b)\}}">
+
+This is the general form of the loss function used for an SVM. Here, the first term measures the error due to misclassification (or data points being closer to the classification boundary than the margin), and is know as hinge-loss. "Hinge" describes the fact that the error is 0 if the data point is classified correctly (and is not too close to the decision boundary), and after that it keeps increasing.
+
+<p align = "center">
+  <img src = "https://github.com/Adi-ds/Private-Repo/blob/main/images/hinge.png">
+</p>
